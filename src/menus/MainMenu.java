@@ -32,7 +32,8 @@ public class MainMenu {
 
             case "2":
                 System.out.println("Here are your review options");
-                ReviewMenu.Reviewmenu();
+                ReviewMenu.ReviewMenu();
+
                 break;
 
             case "3":
@@ -41,7 +42,7 @@ public class MainMenu {
                 break;
 
             default:
-                System.out.println("Going back to Main Menu... Please type in another from 0-3 option");
+                System.out.println("Going back to Main Menu... Please type in another option from 0-3");
                 printMainMenu();
                 break;
         }

@@ -15,8 +15,8 @@ public class ReviewMenu {private final UserInput userInput = new UserInput();
                         +"4. Print mean grade of an Item.\n"
                         +"5. Print all comments of an Item.\n"
                         +"6. Print all registered reviews.\n"
-                        +" 7. Print item(s) with most reviews.\n"
-                        +"+8. Print item(s) with least reviews.\n"
+                        +"7. Print item(s) with most reviews.\n"
+                        +"8. Print item(s) with least reviews.\n"
                         +"9. Print item(s) with best mean review grade.\n"
                         +"10. Print item(s) with worst mean review grade.\n"
         );
@@ -24,15 +24,15 @@ public class ReviewMenu {private final UserInput userInput = new UserInput();
         String userInput = UserInput.readInput();
         switch (userInput){
             case "0":
-                System.out.println("Returning to main menu...");
+                System.out.println("0. Returning to main menu...");
                 MainMenu.printMainMenu();
 
                 break;
             case "1":
-                System.out.println("Create a review for selected item");
+                System.out.println("1. Create a review for selected item");
                 break;
             case "2":
-                System.out.println("Printing specified review for selected item");
+                System.out.println("2.Print a specific review of an Item");
                 break;
             case "3":
                 System.out.println("3. Print all reviews of an Item.");
@@ -61,14 +61,15 @@ public class ReviewMenu {private final UserInput userInput = new UserInput();
 
 
             default:
-                System.out.println("Going back to Main Menu... Please type in another from 0-3 option");
+                System.out.println("Invalid option. Going back to Main Menu... Please type in a valid option from 0-10.");
                 MainMenu.printMainMenu();
                 break;
         }
     }
 
-    public static void Reviewmenu() {
+    public ReviewMenu() {
     }
 }
+
 
 
