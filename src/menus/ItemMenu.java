@@ -42,7 +42,7 @@ public class ItemMenu {private final UserInput userInput = new UserInput();
                 break;
 
             default:
-                System.out.println("Going back to Main Menu... Please type in another from 0-3 option");
+                System.out.println("Going back to Main Menu... Please type in another option from 0-3");
                 MainMenu.printMainMenu();
                 break;
         }
